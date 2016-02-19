@@ -64,7 +64,9 @@ public class LerFicheiro {
     }
     
     public ArrayList<Alumno> lerRexistros(String nomeFich) {
-        Scanner sc = null;try {
+        Scanner sc = null;
+        
+        try {
             File f = new File (nomeFich);
             sc = new Scanner(f);
             while(sc.hasNextLine()){
