@@ -30,12 +30,12 @@ public class EscribirFich {
         }
     }
     
-    public void lerEscNotPares(String nomeFichAlum, String nomeFich) {
+    public void lerEscNotPares(String nomeFichLec, String nomeFichEsc) {
         Scanner sc = null;
         PrintWriter escribir = null;
         try {
-            File f = new File (nomeFich);
-            File x = new File (nomeFichAlum);
+            File f = new File (nomeFichEsc);
+            File x = new File (nomeFichLec);
             sc = new Scanner(x);
             escribir = new PrintWriter(f);
             while(sc.hasNextLine()){
