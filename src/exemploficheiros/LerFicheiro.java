@@ -72,7 +72,7 @@ public class LerFicheiro {
             while(sc.hasNextLine()){
                 String res = sc.nextLine();
                 String[]datos = res.split(",");
-                lista.add(new Alumno(datos[0], datos[1], parseInt(datos[2])));
+                lista.add(new Alumno(datos[0], datos[1], Integer.parseInt(datos[2])));
             }
         }
         catch (FileNotFoundException ex) {
