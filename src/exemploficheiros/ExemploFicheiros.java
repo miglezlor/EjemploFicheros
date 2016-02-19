@@ -25,7 +25,8 @@ public class ExemploFicheiros {
         obxler.lerRexistros("/datos/local/mgonzalezlorenzo/NetBeansProjects/PROGRAMACION/ExemploFicheiros/alumnos.txt");
         obxler.visualizar();
         EscribirFich obxesc = new EscribirFich();
-        obxesc.escribir("num.txt");
+        //obxesc.escribir("num.txt");
+        obxesc.lerEscNotPares("alumnos.txt","notasPar.txt");
     }
     
 }
