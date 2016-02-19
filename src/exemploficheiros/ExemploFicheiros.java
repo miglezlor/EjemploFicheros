@@ -24,6 +24,8 @@ public class ExemploFicheiros {
         //obxler.lerNumeros("/datos/local/mgonzalezlorenzo/NetBeansProjects/PROGRAMACION/ExemploFicheiros/numeros.txt");
         obxler.lerRexistros("/datos/local/mgonzalezlorenzo/NetBeansProjects/PROGRAMACION/ExemploFicheiros/alumnos.txt");
         obxler.visualizar();
+        EscribirFich obxesc = new EscribirFich();
+        obxesc.escribir("num.txt");
     }
     
 }
