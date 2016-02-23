@@ -47,7 +47,7 @@ public class EscribirFich {
             }
         }
         catch (FileNotFoundException ex) {
-            System.out.println("Erro no ficheiro1 " + ex.toString());
+            System.out.println("Erro no ficheiro " + ex.toString());
         }
         finally{
             sc.close();
