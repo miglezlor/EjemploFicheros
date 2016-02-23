@@ -55,4 +55,22 @@ public class EscribirFich {
         }
         
     }
+    public void engadir(String nomeFich, String dato) throws IOException{
+        FileWriter fw = null;
+        PrintWriter esc = null;
+        
+        try{
+            fw = new FileWriter(nomeFich,true);
+            esc = new PrintWriter(fw);
+            esc.append("\n");
+            esc.append(dato);
+        }
+        catch(IOException ex){
+            System.out.println("Erro engadir "+ ex.getMessage());
+        }
+        finally{
+            fw.close();
+            esc.close();
+        }
+    }
 }

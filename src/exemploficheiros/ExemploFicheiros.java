@@ -27,6 +27,7 @@ public class ExemploFicheiros {
         EscribirFich obxesc = new EscribirFich();
         //obxesc.escribir("num.txt");
         obxesc.lerEscNotPares("alumnos.txt","notasPar.txt");
+        
     }
     
 }
